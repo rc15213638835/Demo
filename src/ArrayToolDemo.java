@@ -7,7 +7,7 @@
 public class ArrayToolDemo {
     public static void main(String[] args) {
         int [] arr ={3,1,87,32,8};
-        ArrayTool tool = new ArrayTool();
+//        ArrayTool tool = new ArrayTool();
 
         int max = ArrayTool.getMax(arr);
         System.out.println("max="+max);
