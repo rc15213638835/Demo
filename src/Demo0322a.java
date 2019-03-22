@@ -17,13 +17,21 @@ main：不是关键字，但是是一个特殊的单词，可以被jvm（虚拟�
 (String[] args)：函数的参数，参数类型是一个数组，该数组中的元素是字符串，字符串类型的数组。
 
 主函数是固定格式的：jvm识别。
+
+jvm在调用主函数时，传入的是new String[0];
  */
 public class Demo0322a {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+//        System.out.println(args);//[Ljava.lang.String;@1540e19d
+//        System.out.println(args.length);//0
+        String[] arr = {"haha","hehe","xixi"};
+        MainTest.main(arr);
+
     }
-
-    public static void main(int x) {//能存在，重载了。
-
+}
+class MainTest{
+    public static void main(String[] args) {
+        for (int x=0;x<args.length;x++)
+            System.out.println(args[x]);
     }
 }

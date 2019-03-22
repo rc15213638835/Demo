@@ -37,13 +37,13 @@ static特点
 弊:生命周期过长。
    访问出现局限性（静态虽好，只能访问静态）
  */
-class Person{
+/*class Person{
     String name;//成员变量，实例变量。
     static String country = "CN";//静态的成员变量，类变量。
     public static void show(){
         System.out.println("::"+country);
     }
-}
+}*/
 
 class Demo0321a {
     public static void main(String[] args) {
@@ -52,6 +52,6 @@ class Demo0321a {
 //        p.show();
 //        System.out.println(p.country);
 //        System.out.println(Person.country);//static修饰以后可以被类名调用
-        Person.show();
+//        Person.show();
     }
 }
