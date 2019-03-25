@@ -52,36 +52,36 @@ this的应用：当定义类中功能时，该函数内部要用到调用该函�
 
     }
 
-    *//*
-    构造代码块
+
+    *//*构造代码块
     作用：给对象进行初始化
     对象一建立就运行，而且优先于构造函数执行。
     和构造函数的区别：
-    构造代码块是给所有对象进行统一初始化，而构造函数是给对应的对象初始化
-     *//*
-    *//*{
+    构造代码块是给所有对象进行统一初始化，而构造函数是给对应的对象初始化*//*
+
+    {
         System.out.println("person code run");
-    }*//*
+    }
     Person(String name) {
         this.name = name;
     }
 
     Person(String name, int age) {
-        this(name);//p(name);
+        this.name = name;//p(name);
         this.age = age;
 //        System.out.println("B:name="+name+",,age="+age);
 //        cry();
     }
-    *//*Person(String n,int a){
+    Person(String n,int a){
         name = n;
         age = a;
         System.out.println("C:name="+name+",,age="+age);
-        cry();
-    }*//*
+//        cry();
+    }
 
-    *//*
-    需求：给人定义一个用于比较年龄是否相同的功能。也就是说是否是同龄人。
-     *//*
+
+    //需求：给人定义一个用于比较年龄是否相同的功能。也就是说是否是同龄人。
+
     public void speak(){
         System.out.println("name="+this.name+"age="+this.age);
         this.show();
@@ -96,14 +96,14 @@ this的应用：当定义类中功能时，该函数内部要用到调用该函�
 
 
 
-}*/
+}
 
-    /*class Demo0320b{
+    class Demo0320b{
         public static void main(String[] args) {
-            *//*Person p1 = new Person(20);
+            Person p1 = new Person(20);
             Person p2 = new Person(25);
             boolean b = p1.compare(p2);
-            System.out.println(b);*//*
+            System.out.println(b);
             Person p = new Person("lisi",30);
             Person p1 = new Person("lisi2",36);
 

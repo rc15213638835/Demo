@@ -15,7 +15,7 @@
 什么时候定义静态函数呢？
     当功能内部没有访问到非静态数据（对象的特有数据），那么该功能可以定义成静态的。
  */
-class Person{
+/*class Person{
     String name;
     public static void show(){
         System.out.println("haha");
@@ -27,4 +27,4 @@ public class Demo0322b {
 //        p.show();
         Person.show();
     }
-}
+}*/
